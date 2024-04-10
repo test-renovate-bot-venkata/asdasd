@@ -19,5 +19,8 @@ jobs:
           file: "cert-manager.crds.yaml"
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Check Git Status
-        run: ls -al
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        # Optional. Commit message for the created commit.
+        # Defaults to "Apply automatic changes"
+        commit_message: feat: adding latest CRDs
