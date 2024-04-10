@@ -13,3 +13,6 @@ jobs:
           #version: 'tags/v0.1.18'  # Uncomment and modify as needed
           file: "cert-manager.crds.yaml"
           token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check Git Status
+        run: ls -al
