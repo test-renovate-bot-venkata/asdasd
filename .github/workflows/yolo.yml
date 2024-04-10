@@ -23,4 +23,4 @@ jobs:
       with:
         # Optional. Commit message for the created commit.
         # Defaults to "Apply automatic changes"
-        commit_message: feat: adding latest CRDs
+        commit_message: "feat: adding latest CRDs"
