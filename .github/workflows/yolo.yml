@@ -11,6 +11,5 @@ jobs:
         with:
           repo: 'cert-manager/cert-manager'
           #version: 'tags/v0.1.18'  # Uncomment and modify as needed
-          regex: true
-          file: ".*crds\\.yaml"
+          file: "cert-manager.crds.yaml"
           token: ${{ secrets.GITHUB_TOKEN }}
